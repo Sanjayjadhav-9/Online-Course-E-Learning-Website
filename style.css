@@ -1,0 +1,1425 @@
+:root {
+    --clr-orange: #FF9500;
+    --clr-white: #ffffff;
+    --clr-gray-white: #f6f6f7;
+    --clr-gray-border: #f1f1f2;
+    --clr-section-title: #262626;
+    --clr-section-description: #333333;
+
+    /* fonts */
+    --font-sm: 13px;
+    --font-m: 14px;
+    --font-lg: 14px;
+    --font-xxlg: 35px;
+    --line-height: 68px;
+    --section-title: 36px;
+    --section-title-opacity: 0.85;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bvp-100 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.bvp-200 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.bvp-300 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.bvp-400 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bvp-500 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bvp-600 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.bvp-700 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bvp-800 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.bvp-900 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    color: #262626;
+    background-color: var(--clr-gray-white);
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button,
+span {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header {
+    width: 100%;
+    height: 145px;
+    /* border: 2px solid; */
+}
+
+.header .top-banner {
+    width: 96.8%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-orange);
+    margin: 16px 25px;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.header .top-banner .banner-text {
+    width: 22%;
+    height: 22px;
+    color: var(--clr-white);
+    font-size: var(--font-lg);
+    /* border: 2px solid; */
+}
+
+.header .top-banner .banner-button {
+    width: 25px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid;    */
+}
+
+.header .top-banner .banner-button img {
+    width: 20px;
+    height: 15px;
+    color: var(--clr-white);
+
+}
+
+.header .navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+    /* border: 2px solid; */
+}
+
+.header .navbar .nav-container {
+    width: 40%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    /* border: 2px solid; */
+
+}
+
+.header .navbar .nav-container .logo {
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
+}
+
+.header .navbar .nav-container .nav-links {
+    width: 80%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: var(--font-m);
+    /* border: 2px solid; */
+}
+
+.header .navbar .nav-container .nav-links li .nav-item {
+    width: 10%;
+    height: 47px;
+    font-size: var(--font-lg);
+    padding: 13px;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    /* border: 2px solid; */
+}
+
+.header .navbar .nav-container .nav-links li .nav-item-text {
+    width: 20%;
+    height: 47px;
+    font-size: var(--font-m);
+    padding: 13px;
+    border-radius: 8px;
+    /* border: 2px solid; */
+}
+
+.header .navbar .nav-container .nav-links .nav-item-text:hover {
+    background-color: var(--clr-white);
+}
+
+.header .navbar .auth-buttons {
+    width: 13%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* border: 2px solid; */
+}
+
+.header .navbar .auth-buttons .signup-btn {
+    width: 50%;
+    height: 47px;
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    /* border: 2px solid; */
+}
+
+.header .navbar .auth-buttons .signup-btn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    /* border: 2px solid; */
+}
+
+.header .navbar .auth-buttons .login-btn{
+    width: 50%;
+    height: 47px;
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    /* border: 2px solid; */
+}
+
+/* ====================================================================== */
+/* ======================== Hero section =================================*/
+/* ====================================================================== */
+
+.hero-section {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid; */
+}
+
+.hero-section .hero-container {
+    width: 50%;
+    height: 205px;
+    padding-top: 34px;
+    /* border: 2px solid red; */
+    
+}
+
+.hero-section .hero-container .hero-badge{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 40px;
+    padding: 0 0 0 20px;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    /* border: 2px solid green; */
+    
+}
+
+.hero-section .hero-container .hero-badge .badge-icon .badge-img{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid red; */
+}
+
+.hero-section .hero-container .hero-badge .hero-title span {
+    width: 100%;
+    height: auto;
+    color: var(--clr-orange);
+    /* border: 2px solid;    */
+}
+
+.hero-section .hero-container .hero-badge .hero-title {
+    width: 100%;
+    height: auto;
+    font-size: 38px;
+    /* border: 2px solid;    */
+}
+
+.hero-section .hero-container .hero-subtitle {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid; */
+    
+}
+
+.hero-section .hero-container .hero-subtitle .subtitle-text {
+    width: 100%;
+    height: 40px;
+    font-size: 31px;
+    margin-top: 25px;
+    padding-left: 40px;
+    opacity: 0.88;
+    /* border: 2px solid; */
+}
+
+.hero-section .hero-container .hero-subtitle .subtitle-description {
+    width: 100%;
+    height: 25px;
+    margin-top: 15px;
+    padding-left: 200px;
+    font-size: var(--font-m);
+    opacity: 0.88;
+    /* border: 2px solid; */
+    
+}
+
+.hero-section .hero-buttons {
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* border: 2px solid; */
+    
+}
+
+.hero-section .hero-buttons .explore-btn {
+    width: 158px;
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+    border-radius: 8px;
+    padding: 15px;
+    border: none;
+    /* border: 2px solid; */
+    
+}
+
+.hero-section .hero-buttons .pricing-btn{
+    width: 130px;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: var(--clr-white);
+    /* border: 2px solid; */
+}
+
+.hero-section .hero-buttons .pricing-btn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    /* border: 2px solid; */
+}
+/* =============================================================================== */
+/* ============================= partners section ================================ */
+/* =============================================================================== */
+.partners-section {
+    width: 100%;
+    height: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* border: 2px solid red;    */
+}
+
+.partners-section .partner-wrapper {
+    width: 83%;
+    height: 100px;
+    gap: 10px;
+    padding: 5px 10px;   
+    display: flex;
+    overflow: hidden;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    border-top: 2px solid #bfbfbf;
+    border-bottom: 2px solid #afafaf;
+}
+
+.partners-section .partner-wrapper .partner-container {
+    width: 100%;
+    height: 90px;
+    gap: 10px;
+    padding: 5px 10px;   
+    display: flex;
+    background-color: var(--clr-white);
+    animation: slide 12s linear infinite ;
+    /* border: 2px solid; */
+}
+
+.partners-section .partner-wrapper .partner-container .partner-logo{
+    width: 180px;
+    height: 80px;
+    margin: 0 40px;
+    /* border: 2px solid; */
+}
+
+.partners-section .partner-wrapper .partner-container .partner-logo .partner-img {
+    width: 80px;
+    height: 80px;
+    /* border: 2px solid red; */
+}
+
+.partners-section .partner-wrapper .partner-container .divider {
+    height: 80px;
+    border-right: 2px solid #d0d0d0;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.video-section {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.video-section .video {
+    width: 83%;
+    border-radius: 15px;
+    margin-top: 20px;
+    /* border: 2px solid; */
+}
+
+.video-section .play-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    /* border: 2px solid red; */
+}
+
+/* .video-section .play-btn .play-icon{
+    width: 50px;
+    height: 50px;
+} */
+
+/* ======================================================================= */
+/* =========================  benefits section  ========================== */
+/* ======================================================================= */
+
+.benefits-section {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.benefits-section .benefits-header {
+    width: 83%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-header .benefits-title-wrapper {
+    width: 70%;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+.benefits-section .benefits-header .benefits-title-wrapper .benefits-title{
+    width: 20%;
+    height: auto;
+    line-height: 68px;
+    font-size: var(--section-title);
+    color: var(--clr-section-title);
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-header .benefits-title-wrapper .benefits-description {
+    width: 102%;
+    height: auto;
+    font-size: var(--font-lg);
+    color: var(--clr-section-description);
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-header .view-all-btn {
+    width: 95px;
+    height: auto;
+    font-size: var(--font-lg);
+    margin-top: 50px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-header .view-all-btn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-grid {
+    width: 100%;
+    height: 725px;
+    margin: 50px;
+    margin-bottom: 10px;
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-grid .benefits-row {
+    width: 100%;
+    height: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 12px 0;
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card {
+    width: 411.7px;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card:hover {
+    width: 417.7px;
+    height: 360px;
+    border-radius: 8px;
+    background-color: #ffc861;
+    /* box-shadow: 10px 8px 3px #3d3630; */
+    transition: 1s;
+    /* border: 2px solid; */
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card .benefit-number {
+    width: 100px;
+    height: 100px;
+    padding-top: 35px;
+    font-size: 54px;
+    color: var(--clr-section-title);
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card .benefit-content {
+    padding: 35px;
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card .benefit-content .benefit-title {
+    padding: 10px 0;
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card .benefit-content .benefit-description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card .benefit-arrow {
+    width: 60px;
+    height: 60px;
+    margin: 0 50px 50px 0;
+    padding: 10px;
+    border-radius: 8px; 
+    background-color: var(--clr-white);
+    border: 2px solid #efefef;
+}
+
+.benefits-section .benefits-grid .benefits-row .benefit-card .benefit-arrow .arrow-icon {
+    color: var(--clr-orange);
+    /* background-color: var(--clr-orange); */
+}
+/* ========================================================================== */
+/* ============================= Courses section ============================ */
+/* ========================================================================== */
+.courses-section {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    /* border: 2px solid blue; */
+}
+
+.courses-section .courses-header {
+    width: 85%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+
+}
+
+.courses-section .courses-header .courses-title-wrapper {
+    width: 83%;
+    height: 100px;
+    /* border: 2px solid; */
+}
+
+.courses-section .courses-header .courses-title-wrapper .courses-title {
+    width: 40%;
+    font-size: var(--section-title);
+    line-height: var(--line-height);
+    color: var(--clr-section-title);
+    /* border: 2px solid; */
+}
+
+.courses-section .courses-header .courses-title-wrapper .courses-description {
+    width: 100%;
+    color: var(--clr-section-description);
+    /* border: 2px solid; */
+}
+
+.courses-section .courses-header .courses-view-all {
+    width: 95px;
+    height: auto;
+    font-size: var(--font-lg);
+    margin-top: 50px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+}
+
+.courses-section .courses-header .courses-view-all:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+}
+
+.courses-section .courses-grid {
+    width: 85%;
+    height: 1950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
+    /* border: 2px solid blue;   */
+}
+
+.courses-section .courses-grid .courses-row {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* border: 2px solid red; */
+}
+
+.courses-section .courses-grid .courses-row .course-card {
+    width: 100%;
+    height: 630px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    /* border: 2px solid;  */
+}
+
+.courses-section .courses-grid .courses-row .course-card:hover {
+    width: 101%;
+    height: 635px;
+    padding: 40px;
+    background-color: #ffc861;
+    /* box-shadow: 10px 8px 3px #3d3630; */
+    transition: 1s;
+    /* border: 2px solid; */
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-image {
+    width: 555px;
+    height: auto;
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details {
+    width: 100%;
+    height: 200px;
+    padding: 0 15px;
+    /* border: 2px solid red; */
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-meta {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    /* border: 2px solid blue; */
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-meta .course-tags {
+    width: 50%;
+    height: 35px;
+    padding-top: 5px;
+    /* border: 2px solid green; */
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-meta .course-tags .course-duration{
+    width: 50%;
+    height: 30px;
+    margin: 0 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-gray-border);
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-meta .course-tags .course-level {
+    width: 50%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-gray-border);
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-meta .course-instructor {
+    width: 185px;
+    height: 35px;
+    padding: 6px 0 0 0;
+    /* border: 2px solid red;   */
+    
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-content {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    /* border: 2px solid green; */
+    
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-content .course-title {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid blue; */
+    
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-details .course-content .course-description {
+    width: 100%;
+    height: 70px;
+    /* border: 2px solid green; */
+    
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-btn {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0 0 15px;
+    padding: 15px 222px; 
+    border-radius: 8px;
+    background-color: var(--clr-white); 
+    border: 2px solid rgb(225, 225, 225);
+}
+
+.courses-section .courses-grid .courses-row .course-card .course-btn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+}
+/* ========================================================================== */
+/* ========================= testimonial section ============================ */
+/* ========================================================================== */
+.testimonials-section {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    /* border: 2px solid; */
+
+} 
+.testimonials-section .testimonials-header{
+    width: 85%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+
+.testimonials-section .testimonials-header .testimonials-title-wrapper {
+    width: 83%;
+    height: 100px;
+    /* border: 2px solid red; */
+}
+
+.testimonials-section .testimonials-header .testimonials-title-wrapper .testimonials-title {
+    width: 40%;
+    font-size: var(--section-title);
+    line-height: var(--line-height);
+    color: var(--clr-section-title);
+    /* border: 2px solid green; */
+}
+
+.testimonials-section .testimonials-header .testimonials-title-wrapper .testimonials-description {
+    width: 100%;
+    height: 55px;
+    color: var(--clr-section-description);
+    /* border: 2px solid blue; */
+}
+
+.testimonials-section .testimonials-header .testimonials-view-all{
+    width: 95px;
+    height: auto;
+    font-size: var(--font-lg);
+    margin-top: 50px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    /* border: 2px solid green; */
+}
+
+.testimonials-section .testimonials-header .testimonials-view-all:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+}
+/* ============================================================================== */
+.testimonials-section .testimonials-grid {
+    width: 85%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 2px solid; */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row {
+    width: 100%;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    /* border: 2px solid red; */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card {
+    width: 95%;
+    height: 250px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; 
+    background-color: var(--clr-white);
+    /* border: 2px solid green; */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card:hover {
+    width: 96%;
+    height: 260px;
+    background-color: #ffc861;
+    /* box-shadow: 10px 8px 3px #3d3630; */
+    transition: 1s;
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-content {
+    width: 100%;
+    height: 100px;
+    padding: 20px 49px;
+    font-size: 14px;
+    opacity: 0.7;
+    /* border: 2px solid red; */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-divider {
+    width: 100%;
+    /* height: 2px; */
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 55px 0 55px;
+    /* border: 2px solid blue; */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-footer .testimonial-author {
+    width: 35%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-footer .testimonial-author .author-image {
+    width: 60px;
+    height: 60px;
+    /* border: 2px solid red; */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-footer .testimonial-author .author-name {
+    width: 120px;
+    height: 33px;
+    padding: 5px 20px;
+    font-size: 14px; 
+    /* border: 2px solid green */
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-footer .read-more {
+    width: 185px;
+    height: 53px;
+    padding: 15px 38px;
+    border-radius: 8px;
+    font-size: 14px; 
+    border: 2px solid rgb(216, 216, 216);
+}
+
+.testimonials-section .testimonials-grid .testimonials-row .testimonial-card .testimonial-footer .read-more:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+}
+/* =============================================================================== */
+/* =============================================================================== */
+/* =============================================================================== */
+.pricing-section {
+    width: 100%;
+    height: 190vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* border: 2px solid red; */
+}
+
+.pricing-section .pricing-header {
+    width: 83%;
+    height: 150px;
+    display: flex;
+}
+
+.pricing-section .pricing-header .pricing-title-wrapper {
+    width: 98%;
+    height: 120px;
+    /* border: 2px solid blue; */
+}
+
+.pricing-section .pricing-header .pricing-title-wrapper .pricing-title {
+    width: 30%;
+    height: 60px;
+    font-size: var(--section-title);
+    line-height: var(--line-height);
+    color: var(--clr-section-title);
+    /* border: 2px solid red; */
+}
+
+.pricing-section .pricing-header .pricing-title-wrapper .pricing-description {
+    width: 90%;
+    height: auto;
+    font-size: var(--font-m);
+    color: var(--clr-section-description);
+    margin-top: 8px;
+    /* border: 2px solid green; */
+}
+
+.pricing-section .pricing-header .pricing-toggle {
+    width: 25%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    /* border: 2px solid blue; */
+}
+
+.pricing-section .pricing-header .pricing-toggle .toggle-active {
+    width: 40%;
+    height: 45px;
+    font-size: var(--font-lg);
+    border: none;
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    border-radius: 8px;
+}
+
+.pricing-section .pricing-header .pricing-toggle .toggle-inactive {
+    width: 40%;
+    height: 45px;
+    font-size: var(--font-lg);
+    background-color: var(--clr-white);
+    border: none;
+    border-radius: 8px;    
+}
+
+.pricing-section .pricing-header .pricing-toggle .toggle-inactive:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);    
+}
+
+/* ======================================================================== */
+
+.pricing-section .pricing-plans {
+    width: 83%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    /* border: 2px solid red; */
+}
+
+.pricing-section .pricing-plans .pricing-card {
+    width: 45%;
+    height: 135vh;
+    padding: 60px 40px;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    border: 2px solid #f1f1f3;
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-name {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 10px 0 0 200px;
+    color: #262626;
+    background-color: #FFF9F0;
+    border: 2px solid #FFEACC;
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-price {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    padding: 30px 170px;
+    /* border: 2px solid; */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-price .price-amount {
+    width: 100%;
+    height: 100px;
+    font-size: 76px;
+    /* border: 2px solid; */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-price .price-period {
+    width: 100%;
+    height: 25px;
+    margin-top: 60px;
+    font-size: var(--font-m);
+    /* border: 2px solid; */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-features {
+    width: 100%;
+    height: 86vh;
+    border-radius: 8px;
+    padding: 40px 0 0 50px;
+    border: 2px solid #f1f1f3;
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-features .features-container {
+    width: 90%;
+    height: 80vh;
+    border-radius: 8px;
+    /* border: 2px solid #f1f1f3;    */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-features .features-container .features-title {
+    width: 100%;
+    height: 40px;
+    padding: 0px 0 0 125px;
+    /* border: 2px solid; */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-features .features-container .features-list {
+    width: 100%;
+    height: 70px;
+    /* padding: 10px; */
+    /* border: 2px solid;    */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-features .features-container .features-list .feature-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #f1f1f2;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-features .features-container .features-list .feature-item .feature-icon {
+    width: 10%;
+    padding: 5px 0 0 6px;
+    border-radius: 8px;
+    background-color: #FFF4E5;
+    /* border: 2px solid; */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-features .features-container .features-list .feature-item .feature-text {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 14px;
+    /* border: 2px solid; */
+}
+
+.pricing-section .pricing-plans .pricing-card .plan-btn {
+    width: 100%;
+    height: 100px;  
+    padding: 15px 194px;
+    font-size: 16px;
+    color: var(--clr-white);
+    border-radius: 0 0 8px 8px;
+    background-color: var(--clr-orange);
+    /* border: 2px solid; */
+}
+
+/* ======================================================================== */
+/* ============================ faq section =============================== */
+/* ======================================================================== */
+
+.faq-section {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
+}
+
+.faq-section .faq-wrapper {
+    width: 83%;
+    height: 120vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+    padding: 70px 60px;
+    border-radius: 10px;
+    border: 2px solid #f1f1f2;
+}
+
+.faq-section .faq-wrapper .faq-header {
+    width: 70%;
+    height: 250px;
+    /* border: 2px solid red; */
+}
+
+.faq-section .faq-wrapper .faq-header .faq-title-wrapper {
+    width: 100%;
+    height: 185px;
+    /* border: 2px solid green; */
+}
+
+.faq-section .faq-wrapper .faq-header .faq-title-wrapper .faq-title {
+    width: 90%;
+    height: 100px;
+    font-size: 40px;
+    margin: 10px;
+    /* border: 2px solid blue; */
+}
+
+.faq-section .faq-wrapper .faq-header .faq-title-wrapper .faq-description {
+    width: 70%;
+    margin: 0 10px;
+    font-size: 14px;
+    /* border: 2px solid; */
+}
+
+.faq-section .faq-wrapper .faq-header .faq-btn {
+    width: 10%;
+    height: 80px;
+    margin: 10px;
+    padding:  15px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: var(--clr-white);
+    border: 2px solid #f1f1f2;
+}
+
+.faq-section .faq-wrapper .faq-header .faq-btn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+}
+
+.faq-section .faq-wrapper .faq-list {
+    width: 100%;
+    height: 98vh;
+    padding: 40px;
+    border-radius: 8px;
+    border: 2px solid #f1f1f2;
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item {
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item .faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid #f1f1f2;
+}
+summary::marker { 
+    content: '';
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item .faq-question .question-text {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    /* border: 2px solid red; */
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item .faq-question .question-toggle {
+    width: 8%;
+    height: 40px;
+    padding: 6px 0 0 5px;
+    border-radius: 8px;
+    background-color: #FFF9F0;
+    border: 2px solid #FFEACC;
+}
+/* ======================================================================== */
+.faq-section .faq-wrapper .faq-list .faq-item .faq-answer {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item .faq-subcategory {
+    width: 85%;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 2px solid #f1f1f2;
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item .faq-subcategory .subcategory-text {
+    width: 85%;
+    height: 30px;
+    padding: 5px 20px;
+    background-color: #F1F1F3;
+    /* border: 2px solid; */
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item .faq-subcategory .subcategory-toggle {
+    width: 10%;
+    height: 45px;
+    padding: 7px 0 0 6px;
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    border: 2px solid #f1f1f2;
+}
+
+.faq-section .faq-wrapper .faq-list .faq-item .faq-subcategory .subcategory-toggle:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+}
+
+/* ======================================================================== */
+/* ============================= footer section =========================== */
+/* ======================================================================== */
+
+.footer-section {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid;
+}
+
+.footer-section .footer-content {
+    width: 83%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px; */
+    border: 2px solid red;
+}
+
+.footer-section .footer-content .footer-info {
+    width: 70%;
+    height: 200px;
+    /* display: flex; */
+
+    border: 2px solid green;
+}
+
+.footer-section .footer-content .footer-info .footer-logo {
+    width: 45px;
+    height: 45px;
+}
+
+
+.footer-section .footer-content .footer-info .footer-contact {
+    width: 100%;
+}
+
+
+.footer-section .footer-content .footer-info .footer-contact .contact-item {
+    width: 100%;
+}
+
+.footer-section .footer-content .footer-info .footer-contact .contact-item span {
+    width: 100%;
+} 
+
+/* =========================================================================== */
+
+.footer-section .footer-content .footer-links {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 ;
+    border: 2px solid red;
+}
+
+.footer-section .footer-content .footer-links .footer-column {
+    width: 100%;
+    height: 150px;
+    /* padding: 0 60px; */
+    border: 2px solid green;
+}
+
+.footer-section .footer-content .footer-links .footer-column .column-title {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.footer-section .footer-content .footer-links .footer-column .column-links {
+    width: 100%;
+    
+}
+
+.footer-section .footer-content .footer-links .footer-column .column-links .column-link {
+    width: 100%;
+}
+
+.footer-section .footer-content .footer-links .footer-column .column-title .social-icons {
+    width: 100%;
+}
+
+.footer-section .footer-content .footer-links .footer-column .column-title .social-icons .social-icon {
+    width: 100%;
+}
+
+.footer-section .footer-divider {
+    width: 100%;
+}
+
+.footer-section .footer-copyright {
+    width: 100%;
+}
+
