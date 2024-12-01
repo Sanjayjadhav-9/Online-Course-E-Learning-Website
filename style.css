@@ -5,7 +5,6 @@
     --clr-gray-border: #f1f1f2;
     --clr-section-title: #262626;
     --clr-section-description: #333333;
-
     /* fonts */
     --font-sm: 13px;
     --font-m: 14px;
@@ -14,27 +13,22 @@
     --line-height: 68px;
     --section-title: 36px;
     --section-title-opacity: 0.85;
-
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .bvp-100 {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 100;
     font-style: normal;
 }
-
 .bvp-200 {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
-
 .bvp-300 {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 300;
@@ -52,19 +46,16 @@
     font-weight: 500;
     font-style: normal;
 }
-
 .bvp-600 {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
-
 .bvp-700 {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-
 .bvp-800 {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 800;
@@ -293,7 +284,7 @@ a {
 .hero-section .hero-container .hero-badge .badge-icon .badge-img{
     width: 50px;
     height: 50px;
-    margin-top: 15px;
+    margin-top: 7px; 
     /* border: 2px solid red; */
 }
 
@@ -1079,7 +1070,7 @@ a {
 
 .pricing-section .pricing-plans .pricing-card {
     width: 45%;
-    height: 135vh;
+    height: 125vh;
     padding: 60px 40px;
     background-color: var(--clr-white);
     border-radius: 8px;
@@ -1137,7 +1128,7 @@ a {
 .pricing-section .pricing-plans .pricing-card .plan-features .features-container .features-title {
     width: 100%;
     height: 40px;
-    padding: 0px 0 0 125px;
+    padding: 0 0 0 115px;
     /* border: 2px solid; */
 }
 
@@ -1176,9 +1167,9 @@ a {
 }
 
 .pricing-section .pricing-plans .pricing-card .plan-btn {
-    width: 100%;
-    height: 100px;  
-    padding: 15px 194px;
+    /* width: 120%; */
+    /* height: px;   */
+    padding: 15px 198px;
     font-size: 16px;
     color: var(--clr-white);
     border-radius: 0 0 8px 8px;
@@ -1201,7 +1192,7 @@ a {
 
 .faq-section .faq-wrapper {
     width: 83%;
-    height: 120vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -1256,7 +1247,7 @@ a {
 
 .faq-section .faq-wrapper .faq-list {
     width: 100%;
-    height: 98vh;
+    height: 90vh;
     padding: 40px;
     border-radius: 8px;
     border: 2px solid #f1f1f2;
@@ -1321,7 +1312,7 @@ summary::marker {
     width: 85%;
     height: 30px;
     padding: 5px 20px;
-    background-color: #F1F1F3;
+    background-color: #fff;
     /* border: 2px solid; */
 }
 
@@ -1334,9 +1325,12 @@ summary::marker {
     border: 2px solid #f1f1f2;
 }
 
-.faq-section .faq-wrapper .faq-list .faq-item .faq-subcategory .subcategory-toggle:hover {
-    color: var(--clr-white);
+.faq-section .faq-wrapper .faq-list .faq-item .faq-subcategory .subcategory-toggle:hover{
+    color: #fff;
     background-color: var(--clr-orange);
+}
+.faq-section .faq-wrapper .faq-list .faq-item .faq-subcategory .subcategory-toggle:hover img{
+    color: #fff;
 }
 
 /* ======================================================================== */
@@ -1384,105 +1378,69 @@ summary::marker {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* gap: 10px; */
-    /* border: 2px solid; */
 }
-
-
 .footer-section .footer-content .footer-info .footer-contact .contact-item {
     width: 100%;
     height: 35px;
     display: flex;
-    /* border: 2px solid red; */
 }
-
 .footer-section .footer-content .footer-info .footer-contact .contact-item img {
     width: 25px;
     height: 30px;
-    /* margin: 5px 5px 0 0; */
-    /* border: 2px solid green; */
 } 
-
 .footer-section .footer-content .footer-info .footer-contact .contact-item span {
     width: 80%;
     height: 30px;
-    /* margin: 5px 0 0 0; */
     padding: 6px 0 0 8px;
     font-size: 14px;
-    /* border: 2px solid blue; */
 } 
-
 /* =========================================================================== */
-
 .footer-section .footer-content .footer-links {
     width: 100%;
-    height: 200px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 10px 0 ; */
-    /* border: 2px solid green; */
 }
-
 .footer-section .footer-content .footer-links .footer-column {
     width: 100%;
     height: 200px;
-    /* padding: 0 60px; */
-    /* border: 2px solid red; */
 }
-
 .footer-section .footer-content .footer-links .footer-column .column-title {
     width: 100%;
     padding: 5px 0;
     color: #262626;
     font-size: 16px;
-    /* border: 2px solid; */
 }
-
 .footer-section .footer-content .footer-links .footer-column .column-links {
     width: 100%;
     line-height: 1.9;
-    font-size: 14px;
-    /* border: 2px solid blue; */
-    
+    font-size: 14px;   
 }
-
 .footer-section .footer-content .footer-links .footer-column .column-links .column-link {
     width: 100%;
     color: #59595A;
 }
-
-
 .footer-section .footer-content .footer-links .footer-column .column-title{
     width: 100%;
     height: 40px;
 }
-
 .footer-section .footer-content .footer-links .footer-column .social-icons {
     width: 100%;
     height: 60px;
-    /* padding: 8px 15px; */
-    /* border:2px solid red; */
 }
-
 .footer-section .footer-content .footer-links .footer-column .social-icons .social-icon {
     width: 30px;
     height: 30px;
     opacity: 0.9;
-    
 }
-
 .footer-section .footer-divider {
     width: 90%;
-    height: 50px;
     border-bottom: 2px solid;
     color: #d6d6d6;
 }
-
 .footer-section .footer-copyright {
     width: 100%;
-    height: 50px;
-    padding: 30px 0 0 600px;
+    padding: 25px 0 0 620px;
     color: #656567;
 }
-
